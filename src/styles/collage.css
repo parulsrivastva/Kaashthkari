@@ -1,0 +1,45 @@
+.collage{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background-image: url('/collage.png');
+    background-size: cover;
+    margin-top: 40px;
+    background-position: center;
+    transition: transform .6s; 
+}
+.collage:hover{
+    transform: scale(1.1);
+}
+
+
+
+::-webkit-scrollbar{
+    display: none;
+}
+.c-cnt{
+    width: 100%;
+    padding: 40px 90px;
+    text-align: center;
+    font-size: 15px;
+    padding-top: 80px;
+}
+
+@media (max-width: 425px) {
+    .collage{
+        width: 100%;
+        height: 50vh;
+    }
+    
+}
+@media (max-width: 768px) {
+    .collage{
+        width: 100%;
+        height: 60vh;
+    }
+    .c-cnt{
+        padding: 40px 40px;
+    }
+    
+}

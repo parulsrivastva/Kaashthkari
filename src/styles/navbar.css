@@ -1,0 +1,158 @@
+.navbar {
+  width: 100%;
+  height: 60px;
+  background-color: #5c2811;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 40px;
+  font-size: 14px;
+  color: white;
+}
+.logo {
+  width: 50px;
+  height: 40px;
+  background-image: url("/footerLogo.png");
+  background-size: cover;
+}
+.menu-icon {
+  display: none;
+  color: white;
+}
+
+.nav-it {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.search {
+  margin: 10px 0px;
+  width: 100%;
+  /* background-color: rgba(252, 9, 9, 0.423); */
+  display: flex;
+  /* justify-content: end; */
+  align-items: center;
+  padding: 0px 40px;
+  gap: 30px;
+}
+.hindi-logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+}
+.hindi-logo img{
+  width: 100%;
+}
+.w-nav{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 15px;
+  justify-content: end;
+}
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border: 1px solid #5c2811;
+  background-color: #d9d9d9;
+  border-radius: 50px;
+  width: 25%;
+  padding: 5px 10px;
+}
+
+.search-input {
+  color: #5c2811;
+  border: none;
+  background-color: #d9d9d9;
+  outline: none;
+  width: 100%;
+}
+
+.contact {
+  color: #5c2811;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.nav-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-menu {
+  height: 30px;
+  width: 30px;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.menu-bar {
+  width: 200px;
+  height: 100%;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 9999999;
+  border-left: 2px solid rgb(196, 196, 196);
+  box-shadow: 0px 0px 40px 2px rgb(72, 71, 71);
+}
+.menu-top {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+  height: 40px;
+}
+.mobile-nav-it {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+  color: black;
+}
+
+@media (max-width: 425px) {
+  .navbar {
+    /* align-items: start; */
+  }
+  .w-nav{
+    justify-content: center;
+  }
+  .search{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .search {
+    margin: 0;
+    padding: 10px 0px;
+    gap: 10px;
+    justify-content: center;
+  }
+  .search-box {
+    min-width: 30%;
+  }
+}
+
+@media (max-width: 768px) {
+  .search-box {
+    min-width: 30%;
+  }
+  .nav-it {
+    display: none;
+  }
+  .menu-icon {
+    display: block;
+  }
+}

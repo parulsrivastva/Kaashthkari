@@ -1,0 +1,39 @@
+.gov{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    padding: 40px 0px;
+}
+.ab{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.g-img{
+    position: relative;
+    width: 30%;
+    height: 140px;
+}
+.g-cnt{
+    width: 50%;
+    height: 100%;
+}
+
+
+@media (max-width: 768px) {
+    .ab{
+        flex-direction: column;
+    }
+    .g-img{
+        width: 80%;
+    }
+    .g-cnt{
+        width: 100%;
+        padding: 20px;
+    }
+}
